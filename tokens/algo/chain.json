@@ -1,0 +1,19 @@
+{
+    "id": "algo--0",
+    "impl": "algo",
+    "chainId": "0",
+    "name": "Algorand Mainnet",
+    "rpcURLs": [
+        {
+            "url": "https://algoexplorerapi.io",
+            "indexer": "https://algoexplorerapi.io/idx2"
+        }
+    ],
+    "coingecko": {
+        "category_id":"",
+        "platform":"algorand"
+    },
+    "token_source": [
+   
+    ]
+}

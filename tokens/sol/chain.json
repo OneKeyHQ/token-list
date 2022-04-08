@@ -1,0 +1,20 @@
+{
+    "id": "sol--101",
+    "impl": "sol",
+    "chainId": "101",
+    "name": "Solana",
+    "rpcURLs": [
+        {
+            "url":"https://solana-mainnet.phantom.tech/"
+        },
+        {
+            "url": "https://solana-api.projectserum.com/"
+        }
+    ],
+    "coingecko": {
+        "category_id":"solana-ecosystem",
+        "platform":"solana"
+    },
+    "token_source": [
+    ]
+}

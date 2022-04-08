@@ -1,0 +1,25 @@
+{
+    "id": "evm--66",
+    "impl": "evm",
+    "chainId": "66",
+    "name": "OKExChain Mainnet",
+    "rpcURLs": [
+        {
+            "url": "https://exchainrpc.okex.org"
+        },
+        {
+            "url": "https://okchain.mytokenpocket.vip"
+        }
+    ],
+    "coingecko": {
+        "category_id":"oec-ecosystem",
+        "platform":"okex-chain"
+    },
+    "token_source": [
+        {
+            "source": "sushiswap",
+            "url":"https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/okex.json",
+            "path":""
+        }
+    ]
+}

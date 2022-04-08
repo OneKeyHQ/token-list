@@ -1,0 +1,32 @@
+name: npm-publish tokenlists
+
+on: workflow_dispatch
+
+jobs:
+  npm-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+      - uses: actions/setup-python@v2
+      - name: Install python requirements
+        run: |
+          pip install requests
+
+      - name: Build tokenlist
+        run: |
+          python3 ./script/build_list.py
+          python3 ./script/check_fix.py
+
+      - name: Publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          yarn
+          yarn test
+          cp index.d.ts build/
+          yarn publish --access public
+          rm -fr build

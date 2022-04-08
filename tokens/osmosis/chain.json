@@ -1,0 +1,14 @@
+{
+    "id": "cosmos--osmosis-1",
+    "impl": "cosmos",
+    "chainId": "osmosis-1",
+    "name": "Osmosis",
+    "rpcURLs": [
+        {
+            "url": "https://lcd-osmosis.blockapsis.com/"
+        },
+        {
+            "url":"https://lcd-osmosis.keplr.app/"
+        }
+    ]
+}
