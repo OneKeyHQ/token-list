@@ -1,0 +1,27 @@
+{
+    "id": "evm--10",
+    "impl": "evm",
+    "chainId": "10",
+    "name": "Optimistic Mainnet",
+    "rpcURLs": [
+        {
+            "url": "https://mainnet.optimism.io"
+        }
+    ],
+    "prices": [
+        {
+            "channel": "coingecko",
+            "native": "ethereum",
+            "platform": "optimistic-ethereum"
+        },
+        {
+            "channel": "yahoo",
+            "native": "ETH"
+        }
+    ],
+    "coingecko": {
+        "platform":"optimistic-ethereum"
+    },
+    "token_source": [
+    ]
+}

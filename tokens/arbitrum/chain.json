@@ -1,0 +1,22 @@
+{
+    "id": "evm--42161",
+    "impl": "evm",
+    "chainId": "42161",
+    "name": "Arbitrum Mainnet",
+    "rpcURLs": [
+        {
+            "url": "https://arb1.arbitrum.io/rpc"
+        }
+    ],
+    "coingecko": {
+        "category_id":"arbitrum-ecosystem",
+        "platform":"arbitrum-one"
+    },
+    "token_source": [
+        {
+            "source": "sushiswap",
+            "url":"https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/arbitrum.json",
+            "path":""
+        }
+    ]
+}

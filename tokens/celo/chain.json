@@ -1,0 +1,22 @@
+{
+    "id": "evm--42220",
+    "impl": "evm",
+    "chainId": "42220",
+    "name": "Celo Mainnet",
+    "rpcURLs": [
+        {
+            "url": "https://forno.celo.org"
+        }
+    ],
+    "coingecko": {
+        "category_id":"celo-ecosystem",
+        "platform":"celo"
+    },
+    "token_source": [
+        {
+            "source": "sushiswap",
+            "url":"https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/celo.json",
+            "path":""
+        }
+    ]
+}

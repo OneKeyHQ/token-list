@@ -1,0 +1,34 @@
+{
+    "id": "evm--250",
+    "impl": "evm",
+    "chainId": "250",
+    "name": "Fantom Mainnet",
+    "rpcURLs": [
+        {
+            "url": "https://rpc.ftm.tools"
+        },
+        {
+            "url": "https://rpc.fantom.network"
+        },
+        {
+            "url": "https://rpcapi.fantom.network"
+        },
+        {
+            "url": "https://rpc2.fantom.network"
+        },
+        {
+            "url": "https://rpc3.fantom.network"
+        }
+    ],
+    "coingecko": {
+        "category_id":"fantom-ecosystem",
+        "platform":"fantom"
+    },
+    "token_source": [
+        {
+            "source": "sushiswap",
+            "url":"https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/fantom.json",
+            "path":""
+        }
+    ]
+}

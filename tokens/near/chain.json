@@ -1,0 +1,17 @@
+{
+    "id": "near--0",
+    "impl": "near",
+    "chainId": "0",
+    "name": "Near Mainnet",
+    "rpcURLs": [
+        {
+            "url": "https://rpc.mainnet.near.org",
+            "indexer": "https://helper.mainnet.near.org"
+        }
+    ],
+    "coingecko": {
+        "category_id":"near-protocol-ecosystem"
+    },
+    "token_source": [
+    ]
+}

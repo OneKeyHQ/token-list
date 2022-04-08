@@ -1,0 +1,31 @@
+{
+    "id": "evm--56",
+    "impl": "evm",
+    "chainId": "56",
+    "name": "Binance Smart Chain",
+    "rpcURLs": [
+        {
+            "url": "https://rpc.onekey.so/bsc"
+        },
+        {
+            "url": "https://bsc-dataseed1.binance.org"
+        },
+        {
+            "url": "https://bsc-dataseed1.defibit.io"
+        },
+        {
+            "url": "https://bsc-dataseed1.ninicoin.io"
+        }
+    ],
+    "coingecko": {
+        "category_id":"binance-smart-chain",
+        "platform":"binance-smart-chain"
+    },
+    "token_source": [
+        {
+            "source": "sushiswap",
+            "url":"https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/bsc.json",
+            "path":""
+        }
+    ]
+}

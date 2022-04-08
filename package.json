@@ -1,0 +1,21 @@
+{
+  "name": "@onekeyfe/onekey-token-list",
+  "version": "0.0.1",
+  "description": "The OneKey default token list",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "build"
+  ],
+  "typings": "build/index.d.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "@uniswap/token-lists": "^1.0.0-beta.27",
+    "ajv": "^6.12.3",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "typescript": "^4.5.5"
+  }
+}

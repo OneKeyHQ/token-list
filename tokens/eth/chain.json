@@ -1,0 +1,41 @@
+{
+    "id": "evm--1",
+    "impl": "evm",
+    "chainId": "1",
+    "name": "Ethereum",
+    "rpcURLs": [
+        {
+            "url": "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+        },
+        {
+            "url": "https://rpc.onekey.so/eth"
+        },
+        {
+            "url": "https://eth1.onekey.so/rpc"
+        },
+        {
+            "url": "https://eth626892d.jccdex.cn"
+        },
+        {
+            "url": "https://geth.mytokenpocket.vip"
+        },
+        {
+            "url": "https://web3.mytokenpocket.vip"
+        }
+    ],
+    "coingecko": {
+        "platform":"ethereum"
+    },
+    "token_source": [
+        {
+            "source": "coingecko",
+            "url":"https://tokens.coingecko.com/uniswap/all.json",
+            "path":"tokens"
+        },
+        {
+            "source": "sushiswap",
+            "url":"https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/mainnet.json",
+            "path":""
+        }
+    ]
+}
