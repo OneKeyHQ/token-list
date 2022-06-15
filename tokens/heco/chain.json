@@ -1,31 +1,31 @@
 {
-    "id": "evm--128",
-    "impl": "evm",
-    "chainId": "128",
-    "name": "Huobi ECO Chain",
-    "rpcURLs": [
-        {
-            "url": "https://rpc.onekey.so/heco"
-        },
-        {
-            "url": "https://http-mainnet-node.huobichain.com"
-        },
-        {
-            "url": "https://http-mainnet-node.defibox.com"
-        },
-        {
-            "url": "https://http-mainnet-node.huobichain.com"
-        }
-    ],
-    "coingecko": {
-        "category_id":"heco-chain-ecosystem",
-        "platform":"huobi-token"
+  "id": "evm--128",
+  "impl": "evm",
+  "chainId": "128",
+  "name": "Huobi ECO Chain",
+  "rpcURLs": [
+    {
+      "url": "https://rpc.onekey.so/heco"
     },
-    "token_source": [
-        {
-            "source": "sushiswap",
-            "url":"https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/heco.json",
-            "path":""
-        }
-    ]
+    {
+      "url": "https://http-mainnet-node.huobichain.com"
+    },
+    {
+      "url": "https://http-mainnet-node.defibox.com"
+    },
+    {
+      "url": "https://http-mainnet-node.huobichain.com"
+    }
+  ],
+  "coingecko": {
+    "category_id": "heco-chain-ecosystem",
+    "platform": "huobi-token"
+  },
+  "token_source": [
+    {
+      "source": "sushiswap",
+      "url": "https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/heco.json",
+      "path": ""
+    }
+  ]
 }

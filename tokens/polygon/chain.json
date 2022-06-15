@@ -1,40 +1,40 @@
 {
-    "id": "evm--137",
-    "impl": "evm",
-    "chainId": "137",
-    "name": "Polygon Mainnet",
-    "rpcURLs": [
-        {
-            "url": "https://polygon-rpc.com"
-        },
-        {
-            "url": "https://rpc-mainnet.matic.network"
-        },
-        {
-            "url": "https://rpc-mainnet.maticvigil.com"
-        },
-        {
-            "url": "https://rpc-mainnet.matic.quiknode.pro"
-        },
-        {
-            "url": "https://matic-mainnet.chainstacklabs.com"
-        },
-        {
-            "url": "https://matic-mainnet-full-rpc.bwarelabs.com"
-        },
-        {
-            "url": "https://matic-mainnet-archive-rpc.bwarelabs.com"
-        }
-    ],
-    "coingecko": {
-        "category_id":"polygon-ecosystem",
-        "platform":"polygon-pos"
+  "id": "evm--137",
+  "impl": "evm",
+  "chainId": "137",
+  "name": "Polygon Mainnet",
+  "rpcURLs": [
+    {
+      "url": "https://polygon-rpc.com"
     },
-    "token_source": [
-        {
-            "source": "sushiswap",
-            "url":"https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/matic.json",
-            "path":""
-        }
-    ]
+    {
+      "url": "https://rpc-mainnet.matic.network"
+    },
+    {
+      "url": "https://rpc-mainnet.maticvigil.com"
+    },
+    {
+      "url": "https://rpc-mainnet.matic.quiknode.pro"
+    },
+    {
+      "url": "https://matic-mainnet.chainstacklabs.com"
+    },
+    {
+      "url": "https://matic-mainnet-full-rpc.bwarelabs.com"
+    },
+    {
+      "url": "https://matic-mainnet-archive-rpc.bwarelabs.com"
+    }
+  ],
+  "coingecko": {
+    "category_id": "polygon-ecosystem",
+    "platform": "polygon-pos"
+  },
+  "token_source": [
+    {
+      "source": "sushiswap",
+      "url": "https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/matic.json",
+      "path": ""
+    }
+  ]
 }

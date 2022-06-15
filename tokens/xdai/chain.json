@@ -1,22 +1,22 @@
 {
-    "id": "evm--100",
-    "impl": "evm",
-    "chainId": "100",
-    "name": "xDai Mainnet",
-    "rpcURLs": [
-        {
-            "url": "https://rpc.xdaichain.com"
-        }
-    ],
-    "coingecko": {
-        "category_id":"xdai-ecosystem",
-        "platform":"xdai"
-    },
-    "token_source": [
-        {
-            "source": "sushiswap",
-            "url":"https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/xdai.json",
-            "path":""
-        }
-    ]
+  "id": "evm--100",
+  "impl": "evm",
+  "chainId": "100",
+  "name": "xDai Mainnet",
+  "rpcURLs": [
+    {
+      "url": "https://rpc.xdaichain.com"
+    }
+  ],
+  "coingecko": {
+    "category_id": "xdai-ecosystem",
+    "platform": "xdai"
+  },
+  "token_source": [
+    {
+      "source": "sushiswap",
+      "url": "https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/xdai.json",
+      "path": ""
+    }
+  ]
 }

@@ -1,16 +1,15 @@
 {
-    "id": "stc--1",
-    "impl": "stc",
-    "chainId": "1",
-    "name": "Starcoin Mainnet",
-    "rpcURLs": [
-        {
-            "url": "https://main-seed.starcoin.org"
-        }
-    ],
-    "coingecko": {
-        "platform":"starcoin"
-    },
-    "token_source": [
-    ]
+  "id": "stc--1",
+  "impl": "stc",
+  "chainId": "1",
+  "name": "Starcoin Mainnet",
+  "rpcURLs": [
+    {
+      "url": "https://main-seed.starcoin.org"
+    }
+  ],
+  "coingecko": {
+    "platform": "starcoin"
+  },
+  "token_source": []
 }

@@ -1,21 +1,19 @@
 {
-    "id": "cosmos--cosmoshub-4",
-    "impl": "cosmos",
-    "chainId": "cosmoshub-4",
-    "name": "Cosmos Hub",
-    "rpcURLs": [
-        {
-            "url": "https://lcd-cosmoshub.blockapsis.com"
-        },
-        {
-            "url":"https://lcd-cosmoshub.keplr.app/"
-        }
-    ],
-    "coingecko": {
-        "category_id":"cosmos-ecosystem",
-        "platform":"cosmos"
+  "id": "cosmos--cosmoshub-4",
+  "impl": "cosmos",
+  "chainId": "cosmoshub-4",
+  "name": "Cosmos Hub",
+  "rpcURLs": [
+    {
+      "url": "https://lcd-cosmoshub.blockapsis.com"
     },
-    "token_source": [
-     
-    ]
+    {
+      "url": "https://lcd-cosmoshub.keplr.app/"
+    }
+  ],
+  "coingecko": {
+    "category_id": "cosmos-ecosystem",
+    "platform": "cosmos"
+  },
+  "token_source": []
 }

@@ -1,19 +1,18 @@
 {
-    "id": "evm--25",
-    "impl": "evm",
-    "chainId": "25",
-    "name": "Cronos",
-    "rpcURLs": [
-        {
-            "url":"https://evm.cronos.org/"
-        },
-        {
-            "url": "https://evm-cronos.crypto.org"
-        }
-    ],
-    "coingecko": {
-        "platform":"cronos"
+  "id": "evm--25",
+  "impl": "evm",
+  "chainId": "25",
+  "name": "Cronos",
+  "rpcURLs": [
+    {
+      "url": "https://evm.cronos.org/"
     },
-    "token_source": [
-    ]
+    {
+      "url": "https://evm-cronos.crypto.org"
+    }
+  ],
+  "coingecko": {
+    "platform": "cronos"
+  },
+  "token_source": []
 }
