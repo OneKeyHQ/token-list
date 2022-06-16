@@ -3,14 +3,14 @@ import fetch from "node-fetch";
 import { get } from "lodash";
 
 export async function getOriginalTokens(
-  token_source?: TokenSource[],
-  merged?: FungibleToken[]
+  tokenSource?: TokenSource[],
+  multiOriginalTokenSources?: FungibleToken[][]
 ) {
   const map = new Map<string, FungibleToken>();
 
-  if (token_source) {
+  if (tokenSource) {
     await Promise.all(
-      token_source.map(async ({ source, url, path }) => {
+      tokenSource.map(async ({ source, url, path }) => {
         const response = await fetch(url);
 
         if (!response.ok || response.status !== 200) return;
@@ -44,24 +44,27 @@ export async function getOriginalTokens(
     );
   }
 
-  merged?.forEach((x) => {
-    const key = `${x.address.toLowerCase()}_${
-      x.chainId
-    }_${x.symbol.toLowerCase()}`;
-    const cache = map.get(key);
+  // Merge data from other sources
+  multiOriginalTokenSources?.forEach((tokens) =>
+    tokens.forEach((x) => {
+      const key = `${x.address.toLowerCase()}_${
+        x.chainId
+      }_${x.symbol.toLowerCase()}`;
+      const cache = map.get(key);
 
-    map.set(
-      key,
-      cache
-        ? {
-            ...x,
-            source: [
-              ...new Set([...(cache.source ?? []), ...(x.source ?? [])]),
-            ],
-          }
-        : x
-    );
-  });
+      map.set(
+        key,
+        cache
+          ? {
+              ...x,
+              source: [
+                ...new Set([...(cache.source ?? []), ...(x.source ?? [])]),
+              ],
+            }
+          : x
+      );
+    })
+  );
 
   return [...map.values()];
 }

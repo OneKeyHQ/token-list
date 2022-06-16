@@ -27,10 +27,9 @@ async function main() {
       chain.coingecko?.platform
     );
 
-    const originalTokens = await getOriginalTokens(
-      chain.token_source,
-      coinGeckoTokens
-    );
+    const originalTokens = await getOriginalTokens(chain.token_source, [
+      coinGeckoTokens,
+    ]);
 
     const platformTokens = results.get(chain.impl);
     const tokens = uniqWith(
