@@ -4,9 +4,9 @@ import { join } from "path";
 function check() {
   for (const dir of readdirSync(join(__dirname, "/tokens"))) {
     const path = join(__dirname, `/tokens/${dir}/tokens.json`);
-    const raw_token = readFileSync(path, "utf-8");
+    const rawToken = readFileSync(path, "utf-8");
 
-    const localTokens = JSON.parse(raw_token);
+    const localTokens = JSON.parse(rawToken);
 
     if (!Array.isArray(localTokens))
       throw new Error("tokens.json must be an array.");
