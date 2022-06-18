@@ -1,9 +1,8 @@
-
 export type Version = {
   major: number;
   minor: number;
   patch: number;
-}
+};
 
 export type TokenList = {
   keywords?: string[];

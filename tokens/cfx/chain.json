@@ -1,15 +1,13 @@
 {
-    "id": "cfx--1029",
-    "impl": "cfx",
-    "chainId": "1029",
-    "name": "Conflux Mainnet",
-    "rpcURLs": [
-        {
-            "url": "https://main.confluxrpc.com"
-        }
-    ],
-    "coingecko": {
-    },
-    "token_source": [
-    ]
+  "id": "cfx--1029",
+  "impl": "cfx",
+  "chainId": "1029",
+  "name": "Conflux Mainnet",
+  "rpcURLs": [
+    {
+      "url": "https://main.confluxrpc.com"
+    }
+  ],
+  "coingecko": {},
+  "token_source": []
 }

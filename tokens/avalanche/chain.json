@@ -1,25 +1,25 @@
 {
-    "id": "evm--43114",
-    "impl": "evm",
-    "chainId": "43114",
-    "name": "Avalanche Mainnet",
-    "rpcURLs": [
-        {
-            "url": "https://rpc.onekey.so/avax"
-        },
-        {
-            "url": "https://api.avax.network/ext/bc/C/rpc"
-        }
-    ],
-    "coingecko": {
-        "category_id":"avalanche-ecosystem",
-        "platform":"avalanche"
+  "id": "evm--43114",
+  "impl": "evm",
+  "chainId": "43114",
+  "name": "Avalanche Mainnet",
+  "rpcURLs": [
+    {
+      "url": "https://api.avax.network/ext/bc/C/rpc"
     },
-    "token_source": [
-        {
-            "source": "sushiswap",
-            "url":"https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/avalanche.json",
-            "path":""
-        }
-    ]
+    {
+      "url": "https://rpc.onekey.so/avax"
+    }
+  ],
+  "coingecko": {
+    "category_id": "avalanche-ecosystem",
+    "platform": "avalanche"
+  },
+  "token_source": [
+    {
+      "source": "sushiswap",
+      "url": "https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/avalanche.json",
+      "path": ""
+    }
+  ]
 }

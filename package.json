@@ -2,20 +2,34 @@
   "name": "@onekeyfe/onekey-token-list",
   "version": "0.0.1",
   "description": "The OneKey default token list",
-  "main": "build/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "ts-node index.ts",
+    "check": "ts-node check.ts",
+    "prettier": "prettier -c ."
   },
   "files": [
     "build"
   ],
-  "typings": "build/index.d.ts",
+  "typings": "index.d.ts",
   "license": "MIT",
   "devDependencies": {
+    "@types/lodash-es": "^4.17.6",
+    "@types/node-fetch": "^2.6.1",
     "@uniswap/token-lists": "^1.0.0-beta.27",
     "ajv": "^6.12.3",
     "chai": "^4.3.4",
     "mocha": "^9.1.3",
-    "typescript": "^4.5.5"
+    "node-fetch": "^2.6.1",
+    "prettier": "^2.7.0",
+    "tsc": "^2.0.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3",
+    "urlcat": "^2.0.4",
+    "web3": "^1.7.3"
   }
 }
