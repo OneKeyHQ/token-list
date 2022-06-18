@@ -5,10 +5,10 @@
   "name": "Avalanche Mainnet",
   "rpcURLs": [
     {
-      "url": "https://rpc.onekey.so/avax"
+      "url": "https://api.avax.network/ext/bc/C/rpc"
     },
     {
-      "url": "https://api.avax.network/ext/bc/C/rpc"
+      "url": "https://rpc.onekey.so/avax"
     }
   ],
   "coingecko": {

@@ -1,6 +1,8 @@
-import { FungibleToken, TokenSource } from "../types";
+import { Chain, FungibleToken, TokenSource } from "../types";
 import fetch from "node-fetch";
 import { get } from "lodash";
+import { getSolTokenInfosFromRPC } from "./sol";
+import { getEVMTokenInfosFromRPC } from "./evm";
 
 export async function getOriginalTokens(
   tokenSource?: TokenSource[],
@@ -36,6 +38,7 @@ export async function getOriginalTokens(
                 }
               : {
                   ...x,
+                  chainId: `${x.chainId}`,
                   source: [source],
                 }
           );
@@ -67,4 +70,32 @@ export async function getOriginalTokens(
   );
 
   return [...map.values()];
+}
+
+// Some rpc nodes have batch limit
+const chainPageSizeMapper: Record<string, number> = {
+  ["43114"]: 20,
+  ["25"]: 3,
+};
+
+export async function getVerifiedTokenFromRPC(
+  chain: Chain,
+  tokens: FungibleToken[],
+  url?: string
+) {
+  if (!url) return tokens;
+
+  switch (chain.impl) {
+    case "evm":
+      return getEVMTokenInfosFromRPC(
+        url,
+        tokens,
+        chainPageSizeMapper[chain.chainId] ?? 100
+      );
+    case "sol":
+      return getSolTokenInfosFromRPC(url, tokens);
+    //TODO: Support other network rpc check
+    default:
+      return tokens;
+  }
 }

@@ -5,7 +5,7 @@
   "name": "xDai Mainnet",
   "rpcURLs": [
     {
-      "url": "https://rpc.xdaichain.com"
+      "url": "https://rpc.gnosischain.com"
     }
   ],
   "coingecko": {

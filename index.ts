@@ -2,8 +2,8 @@ import { readFileSync, readdirSync } from "fs";
 import { mkdir, writeFile } from "fs/promises";
 import { join } from "path";
 import { Chain, FungibleToken } from "./types";
-import { uniqWith, isEqual } from "lodash";
-import { getOriginalTokens } from "./helpers";
+import { uniqWith, isEqual, head } from "lodash";
+import { getOriginalTokens, getVerifiedTokenFromRPC } from "./helpers";
 import { getCoinFromCoinGecko } from "./helpers/coingecko";
 
 async function main() {
@@ -31,9 +31,16 @@ async function main() {
       coinGeckoTokens,
     ]);
 
+    // check token from rpc
+    const verifiedTokens = await getVerifiedTokenFromRPC(
+      chain,
+      [...originalTokens, ...localTokens],
+      head(chain.rpcURLs)?.url
+    );
+
     const platformTokens = results.get(chain.impl);
     const tokens = uniqWith(
-      [...(platformTokens ?? []), ...originalTokens, ...localTokens],
+      [...(platformTokens ?? []), ...verifiedTokens],
       (a, b) => isEqual(a.address, b.address)
     );
 

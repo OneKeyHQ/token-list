@@ -23,6 +23,9 @@ function check() {
         );
     }
   }
+
+  for (const dir of readdirSync(join(__dirname, "/dist"))) {
+  }
 }
 
 check();
